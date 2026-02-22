@@ -1,0 +1,337 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HEADER & NAVBAR
+=========================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D71920;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: gold;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero {
+    height: 400px;
+    background: url("assets/images/rcb-banner.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: gold;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title {
+    padding: 40px 20px;
+    text-align: center;
+    background: #111;
+    border-bottom: 2px solid red;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    color: gold;
+}
+
+/* ===========================
+   TEAM PAGE (Player Cards)
+=========================== */
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.player-card {
+    background: #111;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #D71920;
+    transition: 0.4s;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+    border-color: gold;
+}
+
+.player-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.player-card h3 {
+    margin: 10px 0;
+    color: gold;
+}
+
+/* ===========================
+   SCHEDULE PAGE TABLE
+=========================== */
+
+.schedule-table {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background: #111;
+    color: white;
+    font-size: 18px;
+}
+
+table th {
+    background: #D71920;
+    padding: 12px;
+    color: white;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #333;
+}
+
+table tr:nth-child(even) {
+    background: #222;
+}
+
+/* ===========================
+   STATS PAGE
+=========================== */
+
+.stats-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #D71920;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    border-color: gold;
+}
+
+.stat-card h2 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   NEWS PAGE
+=========================== */
+
+.news-section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.news-card {
+    background: #111;
+    padding: 20px;
+    border-left: 5px solid #D71920;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    border-left-color: gold;
+}
+
+.news-card h2 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   FAN ZONE
+=========================== */
+
+.fan-area {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.poll,
+.social {
+    background: #111;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #D71920;
+}
+
+.poll button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    background: #D71920;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poll button:hover {
+    background: gold;
+    color: black;
+}
+
+/* ===========================
+   CONTACT PAGE
+=========================== */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+form {
+    background: #111;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #D71920;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #D71920;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: gold;
+    color: black;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 768px) {
+
+    nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .player-card {
+        width: 90%;
+    }
+
+    .stat-card {
+        width: 90%;
+    }
+}
